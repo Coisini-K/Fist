@@ -1,0 +1,67 @@
+{
+  "name": "vite-project",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "serve": "vite serve",
+    "git:init": "git init",
+    "git:add": "git add .",
+    "git:commit": "npm run git:commit-msg",
+    "git:commit-msg": "git commit -m",
+    "git:push": "git push origin main",
+    "git:pull": "git pull origin main",
+    "git:status": "git status",
+    "git:branch": "git branch",
+    "git:checkout": "git checkout",
+    "git:checkout-new-branch": "git checkout -b",
+    "git:merge": "git merge",
+    "git:fetch": "git fetch",
+    "git:stash": "git stash",
+    "git:stash-pop": "git stash pop",
+    "git:log": "git log --oneline",
+    "git:remote-add": "git remote add origin",
+    "git:tag": "git tag",
+    "git:show": "git show",
+    "git:diff": "git diff",
+    "git:reset": "git reset",
+    "git:reset-hard": "git reset --hard HEAD",
+    "git:clone": "git clone"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "~5.6.2",
+    "vite": "^6.0.11"
+  },
+  "dependencies": {
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "description": "导入时不使用花括号 {}，并且可以使用任意名称",
+  "main": "vite.config.js",
+  "author": "",
+  "license": "ISC",
+  "eslintConfig": {
+    "extends": [
+      "plugin:react/recommended",
+      "plugin:@typescript-eslint/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint"
+    ]
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
+  "resolutions": {
+    "markdownlint-config-schema": "./.vscode/markdownlint-config-schema.json"
+  }
+}
+

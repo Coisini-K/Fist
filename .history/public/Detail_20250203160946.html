@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+    <link href="../src/style/Detail.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="app">
+        <div class="back">
+            <button class="back_bt" onclick="history.back()">
+                <img src="./assets/images/Detail/back.png" alt="Back" />
+            </button>
+        </div>
+
+        <table cellspacing="0" class="mockup_table">
+            <tbody>
+                <tr class="mockup_tr">
+                    <td rowspan="8" class="mockup">
+                        <img src="#" class="mockup_img" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="tr_one tr_head">
+                        <span class="head_span">产品标题</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" class="tr_one">单价</td>
+                    <td colspan="3" class="tr_two Price"></td>
+                </tr>
+                <tr>
+                    <td class="tr_one">服务</td>
+                    <td colspan="3" class="tr_two">
+                        七天无理由退货&nbsp;·&nbsp;晚发必赔&nbsp;·&nbsp;极速退款
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tr_one">采购热度</td>
+                    <td colspan="3" class="tr_two fire">
+                        &nbsp;<span style="color: red"></span>询价
+                        &nbsp;<span style="color: red"></span> 成交
+                        &nbsp;<span style="color: red"></span> 评价
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tr_one">物流</td>
+                    <td colspan="3" class="tr_two">Fist 物流</td>
+                </tr>
+                <tr>
+                    <td rowspan="2" class="tr_one">数量</td>
+                    <td class="there">
+                        <input type="text" value="0" disabled />
+                    </td>
+                    <td class="td_text_one">
+                        <a href="javascript:;" class="decrement">-</a>
+                        <input type="number" class="i_txt" value="1" />
+                        <a href="javascript:;" class="increment" >+</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tr_there"></td>
+                </tr>
+                <tr>
+                    <td class="td_text">
+                        <button class="left_button" >&lt;</button>
+                        <div class="td_box">
+                            <img src="#" class="mockup_img"/>
+                            <img src="#" class="mockup_img"/>
+                            <img src="#" class="mockup_img"/>
+                            <img src="#" class="mockup_img"/>
+                            <img src="#" class="mockup_img"/>
+                            <img src="#" class="mockup_img"/>
+                        </div>
+                        <button class="right_button" >&gt;</button>
+                    </td>
+                    <td colspan="4">
+                        <div class="button_one">
+                            <button class="collection" >⭐收藏</button>
+                            <button class="purchase" >🕹️立即购买</button>
+                            <button class="addcart">🛒加入购物车</button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="footer"></div>
+    </div>
+    <script type="module" src="../../src/components/Detail.js"></script>
+
+</body>
+
+</html>

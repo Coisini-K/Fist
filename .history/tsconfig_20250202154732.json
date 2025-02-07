@@ -1,0 +1,25 @@
+{
+	"compilerOptions": {
+		"target": "es5",
+		"module": "esnext",
+		"strict": true,
+		"jsx": "preserve",
+		"importHelpers": true,
+		"moduleResolution": "node",
+		"skipLibCheck": true,
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"sourceMap": true,
+		"baseUrl": ".",
+		"paths": {
+			"@/*": ["src/*"]
+		},
+		"lib": ["esnext", "dom", "dom.iterable", "scripthost"],
+		"allowJs": true, // 允许编译 .js 和 .jsx 文件
+		"checkJs": false, // 不检查 .js 文件中的类型错误（可选）
+		"noEmit": true // 禁止生成 .js 文件
+	},
+	"include": ["src/**/*.js", "src/**/*.jsx"],
+	"exclude": ["node_modules", "public"]
+}
+
