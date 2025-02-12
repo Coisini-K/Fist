@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!-- 修改viewport meta标签 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fist Mall</title>
     <link rel="icon" href="/assets/favicon/Fist.svg" type="image/x-icon">
     <!-- 引入css样式 -->
@@ -14,25 +15,18 @@
 
     <div id="content"></div>
 
-    <button id="top_btn" class="top_btn hidden">
-        <!-- <img src="/assets/return-top.png" class="return_top" />
-        <hr />
-        <img src="/assets/return-bottom.png" class="return_bottom" /> -->
-    </button>
-
-    <!-- <div class="navigation">
-        <div class="kind"></div>
-    </div> -->
+    <!-- 为按钮添加了title和内部文本，以便提供可识别文本 -->
+    <button id="top_btn" class="top_btn hidden" title="返回顶部">返回顶部</button>
 
     <div class="bottom-navbar" id="bottom-navbar">
         <ul class="navbar_ul">
-            <li class="nav-item" data-route="Home">首页</li>
-            <li class="nav-item" data-route="Serve">服务</li>
-            <li class="nav-item shopping_cart" data-route="ShoppingCart">购物车</li>
-            <li class="nav-item" data-route="Mine">我的</li>
+            <li class="nav-item" data-route="Home" title="首页">首页</li>
+            <li class="nav-item" data-route="Serve" title="服务">服务</li>
+            <li class="nav-item shopping_cart" data-route="ShoppingCart" title="购物车">购物车</li>
+            <li class="nav-item" data-route="Mine" title="我的">我的</li>
         </ul>
     </div>
-
+    
     <!-- 底部备注 -->
     <div class="foot">
         <div class="foot_container" id="foot_container"></div>
