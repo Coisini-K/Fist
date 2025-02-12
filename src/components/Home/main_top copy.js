@@ -1,5 +1,5 @@
 // src/components/main_top.js
-
+//home.html最顶部
 const main_top = {
     init: function () {
         this.searchBarClickEnabled = false; // 控制 .search_bar 点击事件的标志变量
@@ -8,13 +8,8 @@ const main_top = {
         const header = document.getElementById('header');
         const logo = document.querySelector('.logo');
         const search_bar = document.querySelector('.search_bar');
-        const search_button = search_bar ? search_bar.querySelector('.search_button') : null;
+        const search_button = search_bar.querySelector('.search_button');
         const triggerDistance = 200; // 当用户向下滚动超过200px时触发固定效果
-
-        if (!header || !logo || !search_bar) {
-            console.error('Required elements not found in the DOM.');
-            return;
-        }
 
         if (!this.searchBarClickEnabled) {
             search_bar.addEventListener('click', this.BarClick.bind(this));
@@ -32,51 +27,33 @@ const main_top = {
 
     handleScroll: function () {
         const isScrolled = window.scrollY >= this.triggerDistance;
-
         if (isScrolled) {
-            if (this.header) {
-                this.header.classList.add('fixed-header');
-                this.header.style.height = '100px';
-                this.header.style.width = '100vw';
-                this.header.style.display = 'flex';
+            this.header.classList.add('fixed-header');
+            this.header.style.height = '100px';
+            this.header.style.width = '100vw';
+            this.header.style.display = 'flex';
+            this.logo.style.height = '100px';
+            this.logo.style.width = '150px';
+            this.search_bar.style.height = '40px';
+            this.search_bar.style.width = '800px';
+
+            if (this.searchBarClickEnabled) {
+                this.search_bar.removeEventListener('click', this.BarClick);
+                this.searchBarClickEnabled = false;
             }
-
-            if (this.logo) {
-                this.logo.style.height = '100px';
-                this.logo.style.width = '150px';
-            }
-
-            if (this.search_bar) {
-                this.search_bar.style.height = '40px';
-                this.search_bar.style.width = '800px';
-
-                if (this.searchBarClickEnabled) {
-                    this.search_bar.removeEventListener('click', this.BarClick);
-                    this.searchBarClickEnabled = false;
-                }
-            }
-
             this.ExpandedBox();
         } else {
-            if (this.header) {
-                this.header.classList.remove('fixed-header');
-                this.header.style.height = '150px';
-                this.header.style.width = '1600px';
-            }
+            this.header.classList.remove('fixed-header');
+            this.header.style.height = '150px';
+            this.header.style.width = '1600px';
+            this.logo.style.height = '100%';
+            this.logo.style.width = '200px';
+            this.search_bar.style.height = '50px';
+            this.search_bar.style.width = '900px';
 
-            if (this.logo) {
-                this.logo.style.height = '100%';
-                this.logo.style.width = '200px';
-            }
-
-            if (this.search_bar) {
-                this.search_bar.style.height = '50px';
-                this.search_bar.style.width = '900px';
-
-                if (!this.searchBarClickEnabled) {
-                    this.search_bar.addEventListener('click', this.BarClick.bind(this));
-                    this.searchBarClickEnabled = true;
-                }
+            if (!this.searchBarClickEnabled) {
+                this.search_bar.addEventListener('click', this.BarClick.bind(this));
+                this.searchBarClickEnabled = true;
             }
         }
     },
@@ -84,7 +61,6 @@ const main_top = {
     BarClick: function (event) {
         console.log('BarClick triggered'); // 调试输出
         event.stopPropagation(); // 阻止事件冒泡
-
         const expandedBox = this.search_bar.querySelector('.expanded_box');
         const search_bars = this.search_bar.querySelector('.search_bars');
 
@@ -103,23 +79,15 @@ const main_top = {
             return;
         }
 
-        if (search_bars) {
-            search_bars.style.height = "50px";
-        }
-
-        if (expandedBox) {
-            expandedBox.style.display = 'flex';
-        }
-
+        search_bars.style.height = "50px";
+        expandedBox.style.display = 'flex';
         this.search_bar.style.border = '2px solid #50f286';
         this.search_bar.style.height = 'auto';
         this.search_bar.style.top = '50px';
 
         document.addEventListener('click', this.ClickOutside.bind(this));
         this.search_bar.addEventListener('mouseleave', this.MouseLeave.bind(this));
-        if (expandedBox) {
-            expandedBox.addEventListener('mouseleave', this.MouseLeave.bind(this));
-        }
+        expandedBox.addEventListener('mouseleave', this.MouseLeave.bind(this));
 
         this.expandedBoxVisible = true;
     },
@@ -138,7 +106,7 @@ const main_top = {
     },
 
     ExpandedBox: function () {
-        const expandedBox = this.search_bar ? this.search_bar.querySelector('.expanded_box') : null;
+        const expandedBox = this.search_bar.querySelector('.expanded_box');
         if (expandedBox) {
             expandedBox.style.display = 'none';
             this.search_bar.style.height = '50px';
@@ -158,10 +126,8 @@ const main_top = {
         window.removeEventListener('scroll', this.handleScroll);
 
         // 移除搜索按钮的点击和悬停事件监听器
-        if (this.search_button) {
-            this.search_button.removeEventListener('click', this.ExpandedBox);
-            this.search_button.removeEventListener('mouseenter', this.ExpandedBox);
-        }
+        this.search_button.removeEventListener('click', this.ExpandedBox);
+        this.search_button.removeEventListener('mouseenter', this.ExpandedBox);
 
         // 清理对象属性
         this.header = null;

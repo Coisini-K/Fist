@@ -58,13 +58,36 @@ const highlightCurrentImage = (index) => {
 };
 
 document.addEventListener('DOMContentLoaded', function () {
-
-
     // 添加监听器以处理“加入购物车”按钮点击
+    // 获取加入购物车按钮
     const addToCartButton = document.querySelector('.addcart');
     if (addToCartButton) {
-        addToCartButton.addEventListener('click', addToCart);
-    }
+            addToCartButton.addEventListener('click', addToCart);
+        }
+    
+    
+
+    // 获取收藏按钮和消息容器
+     const collectionButton = document.querySelector('.collection');
+     const bookmarkMessageContainer = document.getElementById('messageContainer');
+ 
+    // 添加监听器以处理“收藏”按钮点击
+    // 添加监听器以处理“加入购物车”按钮点击
+    if (addToCartButton) {
+        addToCartButton.addEventListener('click', function (event) {
+                event.preventDefault();
+                showAndHideMessage(bookmarkMessageContainer, '已添加购物车');
+            });
+        }
+
+     if (collectionButton) {
+         collectionButton.addEventListener('click', function (event) {
+             event.preventDefault();
+            //  bookmarkMessageContainer.style.zIndex = 1;
+             showAndHideMessage(bookmarkMessageContainer, '已收藏');
+            //  bookmarkMessageContainer.style.zIndex = -1;
+         });
+     }
 
 
     const productData = Reception.getProductData();
@@ -251,6 +274,44 @@ function addToCart(event) {
 
     // 存储更新后的产品数据
     Reception.storePromotionData(updatedProductData);
+}
 
-    // console.log('商品已成功添加到购物车！', updatedProductData);
+
+function showAndHideMessage(container, messageText) {
+    // 创建新的消息 div
+    const newMessageDiv = document.createElement('div');
+    newMessageDiv.className = 'message';
+    newMessageDiv.textContent = messageText;
+
+    // 获取当前容器中的所有消息元素
+    const existingMessages = Array.from(container.querySelectorAll('.message'));
+
+    // 将新消息添加到容器中
+    container.appendChild(newMessageDiv);
+
+    // 计算每个现有消息的新位置
+    existingMessages.forEach((msg, index) => {
+        setTimeout(() => {
+            msg.style.bottom = `${120 + (existingMessages.length - index) * (70 + 15)}px`; // 每个消息间隔为高度（60px）+ 间距（15px）
+            console.log('msg.style.bottom='+msg.style.bottom)
+        }, 10); // 延迟10毫秒以确保DOM更新完成
+    });
+
+    // 设置新消息的初始位置
+    newMessageDiv.style.bottom = '10%'; // 初始位置在视口下方
+
+    // 3秒后隐藏并移除消息
+    setTimeout(function () {
+        // 首先让消息透明度变为0
+        newMessageDiv.style.opacity = '0';
+
+        setTimeout(function () {
+            if (newMessageDiv.parentNode === container) {
+                container.removeChild(newMessageDiv); // 移除消息
+                console.log('消息已移除');
+            } else {
+                console.error('消息元素已经不在原来的容器中');
+            }
+        }, 500); // 等待过渡效果结束再移除元素
+    }, 3000); // 总共等待3秒
 }

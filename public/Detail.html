@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Detail</title>
+    <link rel="icon" href="/assets/cart.svg" type="image/x-icon">
     <link href="../src/style/Detail.css" type="text/css" rel="stylesheet" />
 </head>
 
@@ -12,7 +13,7 @@
     <div class="app">
         <div class="back">
             <button class="back_bt" onclick="history.back()">
-                <img src="./assets/images/Detail/back.png" alt="Back" />
+                <img src="./assets/images/Detail/back.png" alt="返回按钮" />
             </button>
         </div>
 
@@ -20,7 +21,7 @@
             <tbody>
                 <tr class="mockup_tr">
                     <td rowspan="8" class="mockup">
-                        <img src="#" class="mockup_img" />
+                        <img src="#" class="mockup_img" alt="产品主图"/>
                     </td>
                 </tr>
                 <tr>
@@ -29,7 +30,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="1" class="tr_one">单价</td>
+                    <td class="tr_one">单价</td>
                     <td colspan="3" class="tr_two Price"></td>
                 </tr>
                 <tr>
@@ -41,9 +42,9 @@
                 <tr>
                     <td class="tr_one">采购热度</td>
                     <td colspan="3" class="tr_two fire">
-                        &nbsp;<span style="color: red"></span>询价
-                        &nbsp;<span style="color: red"></span> 成交
-                        &nbsp;<span style="color: red"></span> 评价
+                        &nbsp;<span class="highlight">询价</span>
+                        &nbsp;<span class="highlight">成交</span>
+                        &nbsp;<span class="highlight">评价</span>
                     </td>
                 </tr>
                 <tr>
@@ -51,14 +52,16 @@
                     <td colspan="3" class="tr_two">Fist 物流</td>
                 </tr>
                 <tr>
-                    <td rowspan="2" class="tr_one">数量</td>
+                    <td rowspan="2" class="tr_one">
+                        <label for="quantityInput">数量:</label>
+                    </td>
                     <td class="there">
-                        <input type="text" value="0" disabled />
+                        <input type="text" id="quantityInput" value="0" disabled placeholder="当前数量" />
                     </td>
                     <td class="td_text_one">
                         <a href="javascript:;" class="decrement">-</a>
-                        <input type="number" class="i_txt" value="1" />
-                        <a href="javascript:;" class="increment" >+</a>
+                        <input type="number" id="quantityNumber" class="i_txt" value="1" placeholder="请输入数量" />
+                        <a href="javascript:;" class="increment">+</a>
                     </td>
                 </tr>
                 <tr>
@@ -66,21 +69,21 @@
                 </tr>
                 <tr>
                     <td class="td_text">
-                        <button class="left_button" >&lt;</button>
+                        <button class="left_button">&lt;</button>
                         <div class="td_box">
-                            <img src="#" class="mockup_img"/>
-                            <img src="#" class="mockup_img"/>
-                            <img src="#" class="mockup_img"/>
-                            <img src="#" class="mockup_img"/>
-                            <img src="#" class="mockup_img"/>
-                            <img src="#" class="mockup_img"/>
+                            <img src="#" class="mockup_img" alt="产品图片1"/>
+                            <img src="#" class="mockup_img" alt="产品图片2"/>
+                            <img src="#" class="mockup_img" alt="产品图片3"/>
+                            <img src="#" class="mockup_img" alt="产品图片4"/>
+                            <img src="#" class="mockup_img" alt="产品图片5"/>
+                            <img src="#" class="mockup_img" alt="产品图片6"/>
                         </div>
-                        <button class="right_button" >&gt;</button>
+                        <button class="right_button">&gt;</button>
                     </td>
                     <td colspan="4">
                         <div class="button_one">
-                            <button class="collection" >⭐收藏</button>
-                            <button class="purchase" >🕹️立即购买</button>
+                            <button class="collection">⭐收藏</button>
+                            <button class="purchase">🕹️立即购买</button>
                             <button class="addcart">🛒加入购物车</button>
                         </div>
                     </td>
@@ -88,10 +91,11 @@
             </tbody>
         </table>
 
-        <div class="footer"></div>
+        <div class="footer" id="messageContainer"></div>
+        <!-- <div id="cartMessage">已添加购物车</div>
+        <div id="Bookmarked">已收藏</div> -->
     </div>
     <script type="module" src="../src/components/Detail.js"></script>
-
 </body>
 
 </html>

@@ -8,7 +8,7 @@ html,
 body {
     width: 100%;
     height: auto;
-    margin-top: 100px;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,7 +103,7 @@ td {
 }
 
 .tr_one {
-    width: 95px;
+    width: 100px;
     height: 80px;
     color: rgb(94, 88, 88);
 }
@@ -208,6 +208,7 @@ td {
     /* background-color: transparent; */
     font-size: 1.2rem;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .mockup_img.highlighted {
@@ -215,7 +216,37 @@ td {
     border: 2px solid rgb(141, 249, 68);
 }
 
-.footer {
-    width: 100%;
-    margin-top: 50px;
+.footer{
+width: 10%;
+height:auto;
+position: fixed;
+z-index: 1;
+bottom: 10%;
+left: 45%;
+display: flex;
+flex-wrap: wrap;
 }
+
+
+.message {
+    display: block;
+    position: fixed; /* 确保 z-index 生效 */
+    width: 60px;
+    height: 30px; /* 每个消息的高度 */
+    margin-bottom: 10px; /* 每个消息之间的间距 */
+    /* z-index: 10; */
+    bottom: 10%; /* 初始位置在视口下方 */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ea0909;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 1;
+    transition: bottom 0.5s ease-in-out, opacity 0.5s ease-in-out; /* 添加过渡效果 */
+}
+
+
+
+

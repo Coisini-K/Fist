@@ -1,0 +1,17 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:html/recommended"
+    ],
+    "plugins": [
+        "html"
+    ],
+    "rules": {
+        "html/no-inline-styles": "off",  // 禁用 no-inline-styles 规则
+        "html/require-doctype": "off"    // 禁用 doctype-first 规则
+    }
+}
