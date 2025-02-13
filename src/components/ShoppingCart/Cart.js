@@ -8,6 +8,7 @@ const Cart = {
         this.checkAll = document.querySelector('.checkall');
         this.selectedCount = document.querySelector('.selected_count');
         this.totalPrice = document.querySelector('.total_price');
+        this.cartContainer = document.querySelector('.cart'); // 添加对购物车容器的引用
 
         this.inManagementMode = false; // 管理模式状态
 
@@ -40,13 +41,13 @@ const Cart = {
         });
 
         // 监听增减链接的点击
-        document.querySelectorAll('.increment, .decrement').forEach(link => {
-            bindListener(link, 'click', (event) => {
-                const item = event.target.closest('.cart_item');
-                const delta = event.target.classList.contains('increment') ? 1 : -1;
-                this.changeQuantity(item, delta);
-            });
-        });
+        // document.querySelectorAll('.increment, .decrement').forEach(link => {
+        //     bindListener(link, 'click', (event) => {
+        //         const item = event.target.closest('.cart_item');
+        //         const delta = event.target.classList.contains('increment') ? 1 : -1;
+        //         this.changeQuantity(item, delta);
+        //     });
+        // });
 
         // 绑定删除按钮点击事件
         document.querySelectorAll('.delete_button').forEach(button => {
@@ -75,6 +76,7 @@ const Cart = {
         this.checkAll = null;
         this.selectedCount = null;
         this.totalPrice = null;
+        this.cartContainer = null; // 重置购物车容器引用
 
         // 还原购物车项到初始状态（如果有需要）
         document.querySelectorAll('.cart_item').forEach(item => {
@@ -152,16 +154,69 @@ const Cart = {
 
         // 更新选择数量和总价格
         this.updatePrice();
+
+        // 检查购物车是否为空，并在为空时插入默认图片和提示信息
+        this.checkCartEmpty();
+    },
+
+    checkCartEmpty() {
+        // 获取购物车中的所有商品项
+        this.cartItems = document.querySelectorAll('.cart_item');
+
+        // 如果购物车为空，则插入默认图片和提示信息
+        if (this.cartItems.length === 0) {
+            const defaultImageDiv = document.createElement('div');
+            defaultImageDiv.classList.add('default_image_container');
+
+            const imgElement = document.createElement('img');
+            imgElement.src = './assets/cart.png'; // 替换为实际的默认图片路径
+            imgElement.alt = "无促销信息";
+            imgElement.style.width = '100%';
+            imgElement.style.maxWidth = '40%'; // 可根据需要调整宽度
+            imgElement.style.margin = 'auto';
+            imgElement.style.display = 'block';
+
+            const nullDiv = document.createElement('div');
+            nullDiv.classList.add('nulldiv');
+            nullDiv.textContent = "购物车为空";
+
+            defaultImageDiv.appendChild(imgElement);
+            defaultImageDiv.appendChild(nullDiv);
+
+            if (this.cartContainer) {
+                this.cartContainer.appendChild(defaultImageDiv);
+            }
+        }
     },
 
     QuantityInput(event, item) {
-        // 处理数量输入框的输入
-        const value = parseInt(event.target.value);
-        if (isNaN(value) || value <= 0) {
-            event.target.value = 1;
-            return;
+        const inputElement = event.target;
+        const value = parseInt(inputElement.value);
+
+        // 实时更新总价
+        if (!isNaN(value) && value > 0) {
+            this.updatePrice();
         }
-        this.updatePrice();
+
+        // 在失去焦点时进行最终验证
+        inputElement.addEventListener('blur', () => {
+            const finalValue = parseInt(inputElement.value);
+            if (isNaN(finalValue) || finalValue <= 0) {
+                const confirmDelete = confirm("您输入的数量为0或无效，是否删除该商品？");
+                if (confirmDelete) {
+                    this.removeCartItem(item);
+                } else {
+                    inputElement.value = 1; // 默认值设为1
+                    this.updatePrice(); // 更新价格
+                }
+            } else if (finalValue === 1) {
+                // 如果输入的是1，则直接更新价格
+                this.updatePrice();
+            } else {
+                // 其他有效值，更新价格
+                this.updatePrice();
+            }
+        });
     },
 
     changeQuantity(item, delta) {
@@ -201,14 +256,6 @@ const Cart = {
             checkboxInput.checked = checked;
         });
         this.updatePrice();
-    },
-
-    // 辅助函数：根据商品的唯一标识符获取其数量
-    getCartItemQuantity(imageSrc) {
-        // 这里可以根据你的实际情况调整，比如从 Reception 模块获取数据
-        // 或者直接从 localStorage 中获取等。
-        const item = Reception.aggregate(imageSrc);
-        return item ? item.quantity : undefined;
     },
 };
 

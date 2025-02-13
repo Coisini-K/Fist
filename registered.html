@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>注册页面</title>
+    <link rel="stylesheet" href="registered.css">
+</head>
+<body>
+    <div class="container">
+        <h2>用户注册</h2>
+        <form id="registrationForm" action="/submit_registration" method="post">
+            <label for="username">用户名:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="email">电子邮件:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="password">密码:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <label for="confirm_password">确认密码:</label>
+            <input type="password" id="confirm_password" name="confirm_password" required>
+            
+            <button type="submit">注册</button>
+            <div id="message"></div>
+        </form>
+    </div>
+
+    <script src="registered.js"></script>
+</body>
+</html>

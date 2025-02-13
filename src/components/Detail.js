@@ -65,29 +65,35 @@ document.addEventListener('DOMContentLoaded', function () {
             addToCartButton.addEventListener('click', addToCart);
         }
     
-    
-
-    // 获取收藏按钮和消息容器
-     const collectionButton = document.querySelector('.collection');
-     const bookmarkMessageContainer = document.getElementById('messageContainer');
- 
-    // 添加监听器以处理“收藏”按钮点击
-    // 添加监听器以处理“加入购物车”按钮点击
-    if (addToCartButton) {
+    const collectionButton = document.querySelector('.collection');
+    const bookmarkMessageContainer = document.getElementById('messageContainer');
+     // 添加监听器以处理“加入购物车”按钮点击
+    if (addToCartButton||collectionButton) {
         addToCartButton.addEventListener('click', function (event) {
                 event.preventDefault();
                 showAndHideMessage(bookmarkMessageContainer, '已添加购物车');
             });
+            collectionButton.addEventListener('click', function (event) {
+                event.preventDefault();
+               //  bookmarkMessageContainer.style.zIndex = 1;
+                showAndHideMessage(bookmarkMessageContainer, '已收藏');
+               //  bookmarkMessageContainer.style.zIndex = -1;
+            });
         }
 
-     if (collectionButton) {
-         collectionButton.addEventListener('click', function (event) {
-             event.preventDefault();
-            //  bookmarkMessageContainer.style.zIndex = 1;
-             showAndHideMessage(bookmarkMessageContainer, '已收藏');
-            //  bookmarkMessageContainer.style.zIndex = -1;
-         });
-     }
+    // 获取收藏按钮和消息容器
+    //  const collectionButton = document.querySelector('.collection');
+    //  const bookmarkMessageContainer = document.getElementById('messageContainer');
+ 
+    // // 添加监听器以处理“收藏”按钮点击
+    //  if (collectionButton) {
+    //      collectionButton.addEventListener('click', function (event) {
+    //          event.preventDefault();
+    //         //  bookmarkMessageContainer.style.zIndex = 1;
+    //          showAndHideMessage(bookmarkMessageContainer, '已收藏');
+    //         //  bookmarkMessageContainer.style.zIndex = -1;
+    //      });
+    //  }
 
 
     const productData = Reception.getProductData();
@@ -292,7 +298,7 @@ function showAndHideMessage(container, messageText) {
     // 计算每个现有消息的新位置
     existingMessages.forEach((msg, index) => {
         setTimeout(() => {
-            msg.style.bottom = `${120 + (existingMessages.length - index) * (70 + 15)}px`; // 每个消息间隔为高度（60px）+ 间距（15px）
+            msg.style.bottom = `${90 + (existingMessages.length - index) * (70 + 15)}px`; // 每个消息间隔为高度（60px）+ 间距（15px）
             console.log('msg.style.bottom='+msg.style.bottom)
         }, 10); // 延迟10毫秒以确保DOM更新完成
     });
