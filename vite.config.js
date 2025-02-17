@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import path from 'path';
+// import path from 'path';
 
 export default defineConfig({
     plugins: [
@@ -18,7 +18,7 @@ export default defineConfig({
     },
     resolve: {
         alias: {
-            '@': path.resolve(__dirname, 'src'), // 别名配置，@ 指向 src 目录
+            // '@': path.resolve(__dirname, 'src'), // 别名配置，@ 指向 src 目录
         },
     },
     base: '/', // 设置 base 为相对路径

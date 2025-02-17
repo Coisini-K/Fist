@@ -1,4 +1,5 @@
 body {
+    width: 100vw;
     font-family: Arial, sans-serif;
     background-color: #f4f4f9;
     display: flex;
@@ -8,12 +9,25 @@ body {
     margin: 0;
 }
 
-.container {
+.container_box {
+    width:300px;
+    height: auto;
     background-color: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    width: 300px;
+}
+
+.back{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+.back img{
+    width: 35px;
+    height: 35px;
+   cursor: pointer;
 }
 
 h2 {
@@ -28,7 +42,7 @@ label {
 }
 
 input[type="text"], input[type="email"], input[type="password"] {
-    width: 100%;
+    width: 93%;
     padding: 10px;
     margin-top: 5px;
     margin-bottom: 10px;
@@ -42,7 +56,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
 }
 
-button {
+.registered {
     width: 100%;
     padding: 10px;
     background-color: #28a745;
@@ -54,11 +68,37 @@ button {
     transition: all 0.3s ease;
 }
 
-button:hover {
+.registered:hover {
     background-color: #218838;
 }
 
 #message {
     color: red;
     text-align: center;
+}
+
+.account {
+    font-size: 0.9em;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.account button {
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.account span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.account button:hover {
+    color: red;
 }

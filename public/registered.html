@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>注册页面</title>
-    <link rel="stylesheet" href="registered.css">
+    <link rel="icon" href="/assets/favicon/Fist.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../src/style/registered.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container_box">
+        <div class="back"><img src="./assets/images/Detail/back.png" alt="back" title="返回"></div>
         <h2>用户注册</h2>
-        <form id="registrationForm" action="/submit_registration" method="post">
+        <form id="registrationForm" action="../index.html" method="post">
             <label for="username">用户名:</label>
             <input type="text" id="username" name="username" required>
             
@@ -22,11 +24,15 @@
             <label for="confirm_password">确认密码:</label>
             <input type="password" id="confirm_password" name="confirm_password" required>
             
-            <button type="submit">注册</button>
+            <button type="submit" class="registered">注册</button>
             <div id="message"></div>
         </form>
+        <div class="account">
+            <span>已有账号请</span>
+            <button class="account_box">登录</button>
+        </div>
     </div>
 
-    <script src="registered.js"></script>
+    <script src="../src/components/registered.js"></script>
 </body>
 </html>

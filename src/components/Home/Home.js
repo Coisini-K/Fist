@@ -7,6 +7,7 @@ import Navbar from './Navbar.js';
 import Recommend from './Recommend.js';
 import Scroll from './Scroll.js';
 import main_top from './main_top.js';
+import Toggle from './Toggle.js';
 
 async function initHome() {
     // console.log('home init start');
@@ -17,6 +18,7 @@ async function initHome() {
     Scroll.init();
     Navbar.init();
     main_top.init();
+    Toggle.init();
     // console.log('home init end');
     // console.log('');
 }
@@ -30,6 +32,7 @@ async function destroyHome() {
     Scroll.destroy && Scroll.destroy();
     Navbar.destroy && Navbar.destroy();
     main_top.destroy && main_top.destroy();
+    Toggle.destroy && Toggle.destroy();
     // console.log('home destroy end');
     // console.log('');
 }
@@ -37,3 +40,15 @@ async function destroyHome() {
 // 注册初始化和销毁函数
 registry.InitFunction('Home', initHome);
 registry.DestroyFunction('Home', destroyHome);
+
+//导出js模板
+// const Countdown = {
+
+//     init: function () {
+//     },
+
+//     destroy: function () {
+//     }
+// };
+
+// export default Countdown;

@@ -101,7 +101,7 @@ const Cart = {
 
     showButton(item) {
         // 显示删除按钮并隐藏数量控件
-        const quantityForm = item.querySelector('.quantity_form');
+        // const quantityForm = item.querySelector('.quantity_form');
         const elementsToHide = [item.querySelector('.decrement'), item.querySelector('.increment'), item.querySelector('.quantity_input')];
         elementsToHide.forEach(el => el && (el.style.display = 'none'));
 
@@ -111,7 +111,7 @@ const Cart = {
 
     hideButton(item) {
         // 隐藏删除按钮并显示数量控件
-        const quantityForm = item.querySelector('.quantity_form');
+        // const quantityForm = item.querySelector('.quantity_form');
         const deleteButton = item.querySelector('.delete_button');
         if (deleteButton) {
             deleteButton.style.display = 'none';

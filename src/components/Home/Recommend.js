@@ -63,7 +63,7 @@ const Recommend = {
         window.addEventListener('scroll', scrollHandler);
 
         // 显示正在加载
-        function showLoading(contentItem, maxLoadCount) {
+        function showLoading(contentItem) {
             const loadingMessage = document.createElement('div');
             loadingMessage.innerText = '正在加载';
             loadingMessage.classList.add('loading-message');

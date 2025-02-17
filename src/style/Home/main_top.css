@@ -31,7 +31,7 @@
 }
 
 .begin_left .login:hover,
-.begin_left .enroll:hover {
+.begin_left .registered:hover {
     color: red;
     cursor: pointer;
 }

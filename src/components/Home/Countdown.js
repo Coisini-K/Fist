@@ -9,9 +9,10 @@ const Countdown = {
         this.first = document.querySelector('.first');
         this.second = document.querySelector('.second');
         this.end = document.querySelector('.end');
-        this.container = document.querySelector('.container h2'); // 获取轮播右侧登录的问候
+        // this.container = document.querySelector('.container h2'); // 获取轮播右侧登录的问候
 
-        if (!this.day || !this.first || !this.second || !this.end || !this.container) {
+        // if (!this.day || !this.first || !this.second || !this.end || !this.container) 
+        if (!this.day || !this.first || !this.second || !this.end) {
             console.error('One or more elements not found.');
             return;
         }
@@ -39,17 +40,17 @@ const Countdown = {
             this.second.innerText = this.add(parseInt(times / 60 % 60)) + '分';
             this.end.innerText = this.add(parseInt(times % 60)) + '秒';
 
-            const hours = nowTime.getHours(); // 获取当前时间的小时数
+            // const hours = nowTime.getHours(); // 获取当前时间的小时数
 
-            if (hours >= 0 && hours <= 6) {
-                this.container.innerText = 'Hi! 凌晨好';
-            } else if (hours > 6 && hours <= 12) {
-                this.container.innerText = 'Hi! 上午好';
-            } else if (hours > 12 && hours <= 18) {
-                this.container.innerText = 'Hi! 下午好';
-            } else if (hours > 18 && hours < 24) {
-                this.container.innerText = 'Hi! 晚上好';
-            }
+            // if (hours >= 0 && hours <= 6) {
+            //     this.container.innerText = 'Hi! 凌晨好';
+            // } else if (hours > 6 && hours <= 12) {
+            //     this.container.innerText = 'Hi! 上午好';
+            // } else if (hours > 12 && hours <= 18) {
+            //     this.container.innerText = 'Hi! 下午好';
+            // } else if (hours > 18 && hours < 24) {
+            //     this.container.innerText = 'Hi! 晚上好';
+            // }
         };
 
         countDown();
@@ -81,7 +82,7 @@ const Countdown = {
         this.first = null;
         this.second = null;
         this.end = null;
-        this.container = null;
+        // this.container = null;
 
         // 可以选择在这里执行更多清理操作，例如移除事件监听器等（如果有）
     }

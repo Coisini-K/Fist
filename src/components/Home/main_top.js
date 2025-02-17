@@ -1,5 +1,4 @@
-// src/components/main_top.js
-
+//头部
 const main_top = {
     init: function () {
         this.searchBarClickEnabled = false; // 控制 .search_bar 点击事件的标志变量
@@ -150,6 +149,7 @@ const main_top = {
         }
     },
 
+   
     destroy: function () {
         // 移除所有事件监听器
         if (this.searchBarClickEnabled) {
@@ -161,6 +161,18 @@ const main_top = {
         if (this.search_button) {
             this.search_button.removeEventListener('click', this.ExpandedBox);
             this.search_button.removeEventListener('mouseenter', this.ExpandedBox);
+        }
+
+        // 移除登录和注册按钮的点击事件监听器
+        const loginButton = document.querySelector('.login');
+        const registerButton = document.querySelector('.registered');
+
+        if (loginButton) {
+            loginButton.removeEventListener('click', this.navigateToLogin);
+        }
+
+        if (registerButton) {
+            registerButton.removeEventListener('click', this.navigateToRegister);
         }
 
         // 清理对象属性
