@@ -104,7 +104,6 @@ async function loadPage(route) {
     await registry.initPage(route);
 
     // 更新当前页面的路由
-    // eslint-disable-next-line require-atomic-updates
     currentRoute = route;
 }
 

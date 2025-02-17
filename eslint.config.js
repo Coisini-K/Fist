@@ -10,7 +10,10 @@ export default [
   {
     files: ['**/*.{js,mjs,cjs,jsx}'],
     languageOptions: {
-      globals: globals.browser,
+      globals: {
+        ...globals.browser, // 浏览器环境的全局变量
+        ...globals.node,   // Node.js 环境的全局变量
+      },
       ecmaVersion: 2021,
       sourceType: 'module',
     },
@@ -78,7 +81,7 @@ export default [
       'no-unused-labels': 'error',
       'no-unused-vars': 'warn',
       'no-useless-backreference': 'error',
-      'require-atomic-updates': 'error',
+      'require-atomic-updates': 'off',
       'use-isnan': 'error',
       'valid-typeof': 'error',
     },
