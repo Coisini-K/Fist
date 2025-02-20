@@ -1,3 +1,5 @@
+import  '@/style/login.css';
+
 document.addEventListener('DOMContentLoaded', function () {
     const loginForm = document.getElementById('loginForm');
     const errorMessage = document.getElementById('errorMessage');
@@ -23,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
             // 清除错误消息
             errorMessage.textContent = '';
             // 重定向到主页或其他页面
-            window.location.href = 'index.html'; // 主页是 index.html
+            window.location.href = './index.html'; // 主页是 index.html
         }
     });
 

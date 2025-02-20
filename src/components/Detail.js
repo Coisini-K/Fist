@@ -1,6 +1,9 @@
 /* 商品详情页js Detail.html */
-
 import Reception from '../stores/reception.js';
+import  '@/components/ShoppingCart/ShoppingCart.js';
+import  '@/style/Detail.css';
+// import '@/components/index.js';
+import '@/router/router.js';
 
 // 初始化图片库
 const initializeGallery = (gallery, mainImageSrc) => {
@@ -23,7 +26,7 @@ const initializeGallery = (gallery, mainImageSrc) => {
             } while (usedIndices.has(randomIndex));
 
             usedIndices.add(randomIndex);
-            img.src = `../assets/images/Recommend/${randomIndex}.jpg`;
+            img.src = `../../assets/images/Recommend/${randomIndex}.jpg`;
             // console.log(img.src);
         }
 
@@ -105,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // 填充产品图片
     const productImage = document.querySelector('.mockup_img');
     if (productImage) {
-        productImage.src = '../' + productData.image;
+        productImage.src = '../../' + productData.image;
     }
 
     // 填充产品标题
@@ -225,7 +228,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // 填充火图标和随机数到现有的 span 元素中
 const populateFireIconsAndRandomNumbers = (element, count) => {
-    const fireIconSrc = '../assets/images/Detail/fire-icon.png';
+    const fireIconSrc = '../../assets/images/Detail/fire-icon.png';
     const spans = element.querySelectorAll('span');
 
     // 生成火图标并插入到最前面

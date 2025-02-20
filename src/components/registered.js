@@ -1,3 +1,5 @@
+import  '@/style/registered.css';
+
 document.addEventListener('DOMContentLoaded', function () {
     const registrationForm = document.getElementById('registrationForm');
     const messageDiv = document.getElementById('message');
@@ -42,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
             messageDiv.textContent = '';
 
             // 注册成功后跳转到主页
-            window.location.href = 'index.html';
+            window.location.href = './index.html';
         }
     }
 });

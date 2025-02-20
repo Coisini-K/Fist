@@ -9,6 +9,10 @@ import Scroll from './Scroll.js';
 import main_top from './main_top.js';
 import Toggle from './Toggle.js';
 
+// import  '@/components/login.js';
+// import  '@/style/login.css';
+import  '@/style/Home/Home.css';
+
 async function initHome() {
     // console.log('home init start');
     AnotherFile.init();

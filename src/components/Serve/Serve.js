@@ -1,9 +1,11 @@
-function initializeAbout() {
+// function initializeAbout() {
     // 初始化逻辑
+   
+    import  '@/style/Serve/Serve.css';
     console.log('Initializing About page');
 
-}
-export { initializeAbout };
+// }
+// export { initializeAbout };
 
 
 // import registry from '../registry.js';

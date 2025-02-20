@@ -1,8 +1,9 @@
-function initializeMine() {
+// function initializeMine() {
     // 初始化逻辑
+    import  '@/style/Mine/Mine.css';
     console.log('Initializing Mine page');
-}
-export { initializeMine };
+// }
+// export { initializeMine };
 
 
 // import registry from '../registry.js';

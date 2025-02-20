@@ -7,6 +7,9 @@ export default defineConfig({
         {
             name: 'custom-index-html-transform',
             transformIndexHtml(html) {
+                // 替换所有的 /assets/ 为 ./assets/
+                // html = html.replace(/\/assets\//g, './assets/');
+                
                 // 替换所有的 <link rel="modulepreload" 为 <script type="module"
                 html = html.replace(/<link rel="modulepreload" crossorigin href="([^"]+)">/g, (match, p1) => {
                     if (p1.endsWith('.js')) {
@@ -37,21 +40,24 @@ export default defineConfig({
     build: {
         outDir: 'dist', // 输出目录
         assetsDir: 'assets', // 确保静态资源放在 assets 目录中
-        manifest: true,
-        sourcemap: true,
         rollupOptions: {
             input: {
                 main: path.resolve(__dirname, 'index.html'),
-                // Detail: path.resolve(__dirname, './Detail.html'),
-
-                login: path.resolve(__dirname, 'login.html'),
-                loginJs: path.resolve(__dirname, 'src/components/login.js'),
-                registered: path.resolve(__dirname, 'registered.html'),
-                registeredJs: path.resolve(__dirname, 'src/components/registered.js'),
-                Detail: path.resolve(__dirname, 'Detail.html'),
-                DetailJs: path.resolve(__dirname, 'src/components/Detail.js'),
-                
-              
+                // router: path.resolve(__dirname, 'src/router/router.js'),
+                // categories: path.resolve(__dirname, 'src/constant/Categories.js'),
+                // recommends: path.resolve(__dirname, 'src/constant/Recommends.js'),
+                // reception: path.resolve(__dirname, 'src/stores/reception.js'),
+                // date: path.resolve(__dirname, 'src/utils/date.js'),
+                // detailStyle: path.resolve(__dirname, 'src/style/Detail.css'),
+                // indexStyle: path.resolve(__dirname, 'src/style/index.css'),
+                // loginStyle: path.resolve(__dirname, 'src/style/login.css'),
+                // registeredStyle: path.resolve(__dirname, 'src/style/registered.css'),
+                // detailComponent: path.resolve(__dirname, 'src/components/Detail.js'),
+                // HomeComponent: path.resolve(__dirname, 'src/components/Home/Home.js'),
+                // indexComponent: path.resolve(__dirname, 'src/components/index.js'),
+                // loginComponent: path.resolve(__dirname, 'src/components/login.js'),
+                // registeredComponent: path.resolve(__dirname, 'src/components/registered.js'),
+                // registryComponent: path.resolve(__dirname, 'src/components/registry.js'),
             },
             output: {
                 // entryFileNames: 'assets/[name]-[hash].js',

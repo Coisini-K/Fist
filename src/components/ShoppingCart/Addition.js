@@ -1,4 +1,5 @@
-import Reception from '../../stores/reception.js';
+// import Reception from '../../stores/reception.js';
+import Reception from '@/stores/reception.js';
 
 const Addition = {
     initialized: false,

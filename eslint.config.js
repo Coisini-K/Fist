@@ -50,7 +50,7 @@ export default [
       'no-empty-character-class': 'error',
       'no-empty-pattern': 'error',
       'no-ex-assign': 'error',
-      'no-extra-boolean-cast': 'error',
+      'no-extra-boolean-cast': 'off',
       'no-extra-semi': 'error',
       'no-fallthrough': 'error',
       'no-func-assign': 'error',

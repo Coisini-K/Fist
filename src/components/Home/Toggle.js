@@ -8,21 +8,18 @@ const Toggle = {
         const registerButton = document.querySelector('.container_box_one');
         const registered = document.querySelector('.registered');
 
-
-        if (loginButton||logButton) {
+        if (loginButton || logButton) {
             loginButton.addEventListener('click', this.navigateToLogin.bind(this));
             logButton.addEventListener('click', this.navigateToLogin.bind(this));
         }
 
-        if (registerButton||registered) {
+        if (registerButton || registered) {
             registerButton.addEventListener('click', this.navigateToRegister.bind(this));
             registered.addEventListener('click', this.navigateToRegister.bind(this));
         }
 
-        // 检查是否在目标页面（例如 index.html）
-        if (window.location.pathname === '/index.html' || window.location.pathname === '/index') {
-            this.updateWelcomeMessage();
-        }
+        // 立即调用 updateWelcomeMessage 更新欢迎信息
+        this.updateWelcomeMessage();
     },
 
     destroy: function () {
@@ -65,61 +62,65 @@ const Toggle = {
     updateWelcomeMessage: function () {
         const username = localStorage.getItem('username');
         const containerH2 = document.querySelector('.container h2');
-        const containerBox = document.querySelector('.container_box');
         const containerBoxOne = document.querySelector('.container_box_one');
 
         if (username) {
-            // 设置 .container h2 的文本内容为欢迎信息
-            if (containerH2) {
-                containerH2.textContent = `用户${username}`;
-            }
+            this.setGreetingText(containerH2, username);
+            this.setupLogoutButton(containerBoxOne);
+        } else {
+            this.setGreetingText(containerH2);
+            this.setupRegisterButton(containerBoxOne);
+        }
+    },
 
-            // 动态生成退出按钮并插入到 container_box 中
-            if (containerBox && containerBoxOne) {
-                containerBoxOne.textContent = '切换账号';
+    setGreetingText: function (element, username) {
+        if (!element) return;
 
-                // 创建退出按钮
+        if (username) {
+            element.textContent = `用户${username}`;
+        } else {
+            const nowTime = DateUtils.getCurrentTime();
+            const hours = nowTime.getHours();
+            let greeting = '';
+
+            if (hours >= 0 && hours < 6) greeting = 'Hi! 凌晨好';
+            else if (hours < 12) greeting = 'Hi! 上午好';
+            else if (hours < 18) greeting = 'Hi! 下午好';
+            else greeting = 'Hi! 晚上好';
+
+            element.textContent = greeting;
+        }
+    },
+
+    setupLogoutButton: function (containerBoxOne) {
+        if (containerBoxOne) {
+            containerBoxOne.textContent = '切换账号';
+
+            const containerBox = document.querySelector('.container_box');
+            if (containerBox) {
                 const containerSpan = document.createElement('span');
                 containerSpan.textContent = '/';
 
-                // 创建退出按钮
                 const containerBoxTwo = document.createElement('button');
                 containerBoxTwo.className = 'container_box_two';
                 containerBoxTwo.textContent = '退出';
-
-                // 添加点击事件监听器
                 containerBoxTwo.addEventListener('click', this.handleLogout.bind(this));
 
-                // 插入到 container_box 中
                 containerBox.appendChild(containerSpan);
                 containerBox.appendChild(containerBoxTwo);
             }
-        } else {
-            // console.error('用户名未找到，请重新登录');
-            const nowTime = DateUtils.getCurrentTime();
-            const hours = nowTime.getHours(); // 获取当前时间的小时数
+        }
+    },
 
-            // 设置 .container h2 的文本内容为问候语
-            if (containerH2) {
-                if (hours >= 0 && hours <= 6) {
-                    containerH2.textContent = 'Hi! 凌晨好';
-                } else if (hours > 6 && hours <= 12) {
-                    containerH2.textContent = 'Hi! 上午好';
-                } else if (hours > 12 && hours <= 18) {
-                    containerH2.textContent = 'Hi! 下午好';
-                } else if (hours > 18 && hours < 24) {
-                    containerH2.textContent = 'Hi! 晚上好';
-                }
-            }
+    setupRegisterButton: function (containerBoxOne) {
+        if (containerBoxOne) {
+            containerBoxOne.textContent = '注册';
 
-            // 确保 container_box_one 存在并设置其文本内容为注册
-            if (containerBoxOne) {
-                containerBoxOne.textContent = '注册';
-
-                // 如果已经存在退出按钮，则移除它
+            const containerBox = document.querySelector('.container_box');
+            if (containerBox) {
                 const containerBoxTwo = document.querySelector('.container_box_two');
                 const containerSpan = document.querySelector('.container_box span');
-                if (containerBoxTwo&&containerSpan) {
+                if (containerBoxTwo && containerSpan) {
                     containerBoxTwo.remove();
                     containerSpan.remove();
                 }

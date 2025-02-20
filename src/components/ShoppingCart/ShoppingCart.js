@@ -1,6 +1,9 @@
 import registry from '../registry.js';
 import Addition from './Addition.js';
 import Cart from './Cart.js';
+
+import  '@/style/ShoppingCart/ShoppingCart.css';
+
 // import Reception from '../../stores/reception.js';
 
 

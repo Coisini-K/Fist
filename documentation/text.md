@@ -8,9 +8,7 @@
 
 示例：
 
-1.
-
-    导入：// Recommends.js
+1.  导入：// Recommends.js
     const images = [];
     const texts = [];
     export default { images, texts };
@@ -19,18 +17,29 @@
     import use from '../constant/Recommends.js';
     console.log(use.images); // 访问 images
     console.log(use.texts); // 访问 texts
-2.
 
+2.  导入:
     const count={
-        const images = [];
-        const texts = [];
-        }
+    const images = [];
+    const texts = [];
+    }
     export default count ;
-    import use from '../constant/Recommends.js';//导出名字可以不一样
+    导出：
+    import count from '../constant/Recommends.js';//导出名字可以不一样
+
+3.  导入:
+    export default {
+    Home: '/home.html',
+    Mine: '/mine.html',
+    Serve: '/serve.html',
+    ShoppingCart: '/shopping-cart.html'
+    };
+    导出：
+    import routes from '../router/router.js';
 
 ### 使用 export 关键字
 
-  导入时需要使用花括号 {}，并且必须使用导出时的名称
+导入时需要使用花括号 {}，并且必须使用导出时的名称
 
 示例：
 
