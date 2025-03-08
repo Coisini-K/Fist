@@ -1,0 +1,43 @@
+{
+  "cSpell.words": [
+    "blockquote",
+    "dibu",
+    "fontobject",
+    "gesturechange",
+    "gestureend",
+    "gesturestart",
+    "nulldiv",
+    "peaceiris"
+  ],
+  "cSpell.customDictionaries": {
+    "custom-dictionary-workspace": {
+      "name": "custom-dictionary-workspace",
+      "path": "${workspaceFolder:FistMall}/.cspell/custom-dictionary-workspace.txt",
+      "addWords": true,
+      "scope": "workspace"
+    }
+  },
+  "editor.formatOnSave": true, // 启用保存时自动格式化
+  "editor.defaultFormatter": "esbenp.prettier-vscode", // 设置默认格式化工具为 Prettier
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode" // 对 JavaScript 文件使用 Prettier
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode" // 对 TypeScript 文件使用 Prettier
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode" // 对 HTML 文件使用 Prettier
+  },
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features" // 对 CSS 文件使用 Prettier
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode" // 对 SCSS 文件使用 Prettier
+  },
+  "[less]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode" // 对 LESS 文件使用 Prettier
+  },
+  "python.testing.unittestArgs": ["-v", "-s", "./src", "-p", "*test.py"],
+  "python.testing.pytestEnabled": false,
+  "python.testing.unittestEnabled": true
+}
