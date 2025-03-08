@@ -1,0 +1,270 @@
+/* 推荐 */
+
+.tabs {
+    width: 1200px;
+    height: 100px;
+    padding-top: 20px;
+    background-color: #fff;
+    /* border-radius:10px 10px 0 ; */
+    /* background-color: #f5f5f5; */
+}
+
+.tabs-header {
+    width: 100%;
+    height: 40px;
+    /* position: relative; */
+    /* background-color: #f5f5f5; */
+    /* margin: 0.5vw; */
+}
+
+.tabs-header .tabs-title {
+    width: 100%;
+    height: 100%;
+    /* margin: 0; */
+    /* 去除标题外边距 */
+    color: #333;
+    /* 字体颜色 */
+    font-size: 30px;
+    /* 字体大小 */
+    text-align: center;
+    /* 文本居中 */
+    margin: 0;
+}
+
+.tabs-content {
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.tabs-list {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* 确保 .tabs-list 是非静态定位的 */
+    list-style: none;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.tab {
+    width: 180px;
+    height: 100%;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    cursor: pointer;
+    /* position: relative; */
+
+}
+
+.tab_box {
+    width: 60px;
+    height: 48px;
+}
+
+.tab_img {
+    width: 50px;
+    height: 100%;
+}
+
+.tab_lis {
+    width: 110px;
+    height: 100%;
+    text-align: center;
+    line-height: 25px;
+}
+
+.tabs-title,
+.tab-description {
+    width: 100%;
+    height: 25px;
+}
+
+.vertical-line {
+    border: none;
+    /* 移除默认的边框 */
+    width: 1px;
+    /* 设置宽度为1px，使其看起来像一条竖线 */
+    height: 100%;
+    /* 设置高度为100%，使其填充父元素的高度 */
+    background-color: #f5f5f5;
+    /* 设置颜色 */
+    margin: 0;
+    /* 移除默认的外边距 */
+}
+
+
+/* 容器样式 */
+
+.content-area {
+    /* 你可能需要设置宽度或者其他布局属性 */
+    width: 1200px;
+    height: auto;
+    /* background-color: aqua; */
+    /* 例如，设置一个最大宽度 */
+    padding-top: 20px;
+    border-radius: 0 0 10px 10px;
+    background-color: #fff;
+    /* 水平居中 */
+    /* padding: 20px; */
+    /* 内边距 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 允许换行 */
+
+
+}
+
+.content-item {
+    width: 100%;
+    height: 100%;
+
+}
+
+.content-item .photos {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+    /* 项目之间的间距 */
+}
+
+.photos-container {
+    width: 200px;
+    height: 290px;
+    position: relative;
+    /* margin-top: 5px; */
+    padding: 5px;
+    box-sizing: border-box;
+    /* 确保 padding 不影响容器的总尺寸 */
+}
+
+.photos-container img {
+    width: 100%;
+    height: 200px;
+
+    border-radius: 10px;
+}
+
+.photos-container .container_box {
+    width: 100%;
+    height: 45px;
+    font-size: 1.2rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+}
+
+.container_box .container_one {
+    width: 36px;
+    height: 21px;
+    position: absolute;
+    /* padding: 0 7px; */
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 3px;
+    background-color: red;
+}
+
+.container_box .container_two {
+    width: 100%;
+    /* height: 100%; */
+    font-size: 15px;
+    /* font-weight: 600; */
+    line-height: 22px;
+    /* 行高为字体大小的1.5倍 */
+}
+
+
+.photos-container span {
+    width: 100%;
+    height: 30px;
+    display: block;
+    font-size: 1.5rem;
+    /* position: relative;
+        bottom: 0; */
+    margin-top: 5px;
+    color: red;
+}
+
+.photos-container:hover {
+    box-shadow: 0 0 0 1px red;
+    /* 使用 box-shadow 模拟边框 */
+    border-radius: 10px;
+}
+
+/* 定义渐现滑动动画 */
+@keyframes fadeInSlide {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+        /* 初始位置向下偏移50px */
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        /* 最终位置 */
+    }
+}
+
+/* 应用动画的类 */
+.fade-in-slide {
+    animation: fadeInSlide 1s ease-out;
+}
+
+.tab:hover .tab-title,
+.tab:hover .tab-description {
+    color: red;
+}
+
+
+.loading-message {
+    width: 100%;
+    height: 30px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.fixed_tabs {
+    position: fixed;
+    top: 100px;
+    z-index: 100;
+    /* 保持原有样式 */
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    /* 确保背景颜色一致 */
+    /* 其他固定状态下的样式 */
+}
+
+.dibu {
+    display: none;
+    width: 100%;
+    height: 30px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+}
