@@ -35,7 +35,7 @@ jobs:
         uses: actions/upload-pages-artifact@v2
 
         name: Upload artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v3  # 使用 upload-artifact 动作 v3 版本
         with:
           name: jekyll-site
           path: ./_site  
