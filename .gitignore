@@ -6,3 +6,4 @@
 
 # 如果有其他需要保留的文件（如 .gitignore 文件本身），可以单独列出
 !.gitignore
+!.github
