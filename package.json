@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build --debug",
     "preview": "vite preview",
-    "serve": "vite serve",
+    "serve": "vite serve --host",
     "lint": "eslint .",
     "git:init": "git init",
     "git:add": "git add .",
