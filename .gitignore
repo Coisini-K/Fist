@@ -1,11 +1,14 @@
 # 忽略所有文件和文件夹
 /*
-
 # 但是不要忽略 dist 文件夹及其内容
-
-# 明确排除 dist 文件夹中的所有内容
-!/dist/*
-
+!/dist/
+/dist
 # 如果有其他需要保留的文件（如 .gitignore 文件本身），可以单独列出
-!.gitignore
-!.github
+# !dist/.vite
+# !dist/assets
+# !dist/Fonts
+# !dist/view
+# !dist/Detail.html
+# !dist/index.html
+# !dist/login.html
+# !dist/registered.html
