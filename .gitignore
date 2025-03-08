@@ -1,52 +1,13 @@
-# Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
+# 忽略所有文件和文件夹
+/*
 
+# 但是不要忽略 dist 文件夹及其内容
+!/dist/
+/dist/
 
-# Node.js
-node_modules/
+# 明确排除 dist 文件夹中的所有内容
+!/dist/**/*
 
-.DS_Store
-coverage
-*.local
-
-# 编译输出
-dist
-dist-ssr
-dist/
-build/
-
-/cypress/videos/
-/cypress/screenshots/
-
-# Editor directories and files
-.vscode
-.vscode/*
-!.vscode/extensions.json
-.idea
-.idea/
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
-
-# IDE 和编辑器相关文件
-*.iml
-*.launch
-*.sublime-workspace
-
-*.tsbuildinfo
-
-# Ignore .history directory
-.history/
-.history
-
-# 系统临时文件
-.DS_Store
-Thumbs.db
+# 如果有其他需要保留的文件（如 .gitignore 文件本身），可以单独列出
+!.gitignore
+!.github
