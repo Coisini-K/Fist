@@ -16,7 +16,7 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '16'
+        node-version: '20'
 
     - name: Install dependencies
       run: npm install
@@ -24,25 +24,9 @@ jobs:
     - name: Build project
       run: npm run build
 
-    - name: Copy dist content to repository root
-      run: |
-        cp -r dist/. ./
-        rm -rf dist  # 删除 dist 文件夹以避免混淆
-
-    - name: Configure Git
-      run: |
-        git config --global user.name "github-actions[bot]"
-        git config --global user.email "github-actions[bot]@users.noreply.github.com"
-
-    - name: Commit and push changes
-      run: |
-        git add .
-        git commit -m "Deploy dist content to root"
-        git push origin master
-
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./  # 指定发布目录为仓库的根目录
+        publish_dir: ./dist
         publish_branch: master  # 推送到 master 分支
