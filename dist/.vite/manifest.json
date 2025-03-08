@@ -16,7 +16,7 @@
     "name": "modulepreload-polyfill"
   },
   "index.html": {
-    "file": "assets/main-DSCK3YNl.js",
+    "file": "assets/main-CFZ5gVmp.js",
     "name": "main",
     "src": "index.html",
     "isEntry": true,
@@ -41,7 +41,7 @@
     ]
   },
   "src/components/Detail.js": {
-    "file": "assets/DetailJs-DLO71I71.js",
+    "file": "assets/DetailJs-C9Ak-9bS.js",
     "name": "DetailJs",
     "src": "src/components/Detail.js",
     "isEntry": true,
@@ -54,7 +54,7 @@
     ]
   },
   "src/components/index copy.js": {
-    "file": "assets/index copy-ndumyppS.js",
+    "file": "assets/index copy-CfPg1AlQ.js",
     "name": "index copy",
     "src": "src/components/index copy.js",
     "isDynamicEntry": true,
