@@ -1,0 +1,78 @@
+/* 倒计时样式 */
+.promotion {
+    width: 630px;
+    height: 210px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.down_left {
+    width: 315px;
+    height: 210px;
+    background-color: #cc0000;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.promotion .title {
+    width: 100%;
+    height: 70px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    line-height: 70px;
+}
+
+.promotion .desc {
+    width: 100%;
+    height: 70px;
+    font-size: 30px;
+    color: #422828;
+    text-align: center;
+    line-height: 70px;
+}
+
+.promotion .timer {
+    width: 275px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin: 0 5px;
+    background-color: #fafafa;
+    border-radius: 5px;
+}
+
+.promotion .timer span {
+    display: inline-block;
+    padding: 5px;
+    margin: 0 5px;
+    /* box-shadow: 5px -5px 10px rgba(0, 0, 0, 0.5); */
+}
+
+/* 倒计时结束后的样式 */
+.promotion .timer .ended span {
+    background-color: #f00;
+    color: #fff;
+}
+
+.down_right {
+    width: 315px;
+    height: 210px;
+    /* background-color: aqua; */
+    margin-left: 10px;
+}
+
+.down_right img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
