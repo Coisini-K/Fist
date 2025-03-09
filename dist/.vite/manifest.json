@@ -10,154 +10,273 @@
     "file": "assets/modulepreload-polyfill-B5Qt9EMX.js",
     "name": "modulepreload-polyfill"
   },
-  "dist/assets/Avatar-Cys8nkgk.css": {
-    "file": "assets/Avatar-Cys8nkgk-Cys8nkgk.css",
-    "src": "dist/assets/Avatar-Cys8nkgk.css"
+  "dist/assets/Avatar-Cys8nkgk-Cys8nkgk-Cys8nkgk.css": {
+    "file": "assets/Avatar-Cys8nkgk-Cys8nkgk-Cys8nkgk-Cys8nkgk.css",
+    "src": "dist/assets/Avatar-Cys8nkgk-Cys8nkgk-Cys8nkgk.css"
   },
-  "dist/assets/CarouselModule-KayU0Zef.css": {
-    "file": "assets/CarouselModule-KayU0Zef-KayU0Zef.css",
-    "src": "dist/assets/CarouselModule-KayU0Zef.css"
+  "dist/assets/CarouselModule-KayU0Zef-KayU0Zef-KayU0Zef.css": {
+    "file": "assets/CarouselModule-KayU0Zef-KayU0Zef-KayU0Zef-KayU0Zef.css",
+    "src": "dist/assets/CarouselModule-KayU0Zef-KayU0Zef-KayU0Zef.css"
   },
-  "dist/assets/Cart-nNG8uWLm.css": {
-    "file": "assets/Cart-nNG8uWLm-nNG8uWLm.css",
-    "src": "dist/assets/Cart-nNG8uWLm.css"
+  "dist/assets/Cart-nNG8uWLm-nNG8uWLm-nNG8uWLm.css": {
+    "file": "assets/Cart-nNG8uWLm-nNG8uWLm-nNG8uWLm-nNG8uWLm.css",
+    "src": "dist/assets/Cart-nNG8uWLm-nNG8uWLm-nNG8uWLm.css"
   },
-  "dist/assets/Categories-BdjJgUOn.css": {
-    "file": "assets/Categories-BdjJgUOn-BdjJgUOn.css",
-    "src": "dist/assets/Categories-BdjJgUOn.css"
+  "dist/assets/Categories-BdjJgUOn-BdjJgUOn-BdjJgUOn.css": {
+    "file": "assets/Categories-BdjJgUOn-BdjJgUOn-BdjJgUOn-BdjJgUOn.css",
+    "src": "dist/assets/Categories-BdjJgUOn-BdjJgUOn-BdjJgUOn.css"
   },
-  "dist/assets/Countdown-D4JAuSxI.css": {
-    "file": "assets/Countdown-D4JAuSxI-D4JAuSxI.css",
-    "src": "dist/assets/Countdown-D4JAuSxI.css"
+  "dist/assets/Countdown-D4JAuSxI-D4JAuSxI-D4JAuSxI.css": {
+    "file": "assets/Countdown-D4JAuSxI-D4JAuSxI-D4JAuSxI-D4JAuSxI.css",
+    "src": "dist/assets/Countdown-D4JAuSxI-D4JAuSxI-D4JAuSxI.css"
   },
-  "dist/assets/Detail-BxgOjPCC.css": {
+  "dist/assets/DetailJs-BxgOjPCC.css": {
     "file": "assets/DetailJs-BxgOjPCC.css",
     "src": "src/components/Detail.js"
   },
-  "dist/assets/DetailJs-C9Ak-9bS.js": {
-    "file": "assets/DetailJs-C9Ak-9bS-DzKgPGuq.js",
-    "name": "DetailJs-C9Ak-9bS",
-    "src": "dist/assets/DetailJs-C9Ak-9bS.js",
+  "dist/assets/DetailJs-C9Ak-9bS-DzKgPGuq-DT3unVsL.js": {
+    "file": "assets/DetailJs-C9Ak-9bS-DzKgPGuq-DT3unVsL-C8dN5a1X.js",
+    "name": "DetailJs-C9Ak-9bS-DzKgPGuq-DT3unVsL",
+    "src": "dist/assets/DetailJs-C9Ak-9bS-DzKgPGuq-DT3unVsL.js",
     "isDynamicEntry": true,
     "imports": [
-      "dist/assets/ShoppingCart-DE60bMba.js"
+      "dist/assets/ShoppingCart-DE60bMba-GFLA7zN7-GFLA7zN7.js"
     ]
   },
-  "dist/assets/Footer-9QWrvDZy.css": {
-    "file": "assets/Footer-9QWrvDZy-9QWrvDZy.css",
-    "src": "dist/assets/Footer-9QWrvDZy.css"
+  "dist/assets/DetailJs-CYrpu2RQ-agxul6C5.js": {
+    "file": "assets/DetailJs-CYrpu2RQ-agxul6C5-CzikPjJX.js",
+    "name": "DetailJs-CYrpu2RQ-agxul6C5",
+    "src": "dist/assets/DetailJs-CYrpu2RQ-agxul6C5.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "dist/assets/ShoppingCart-B9K3qvnT-DRFsorl3.js"
+    ]
   },
-  "dist/assets/Navbar-DLe269F_.css": {
-    "file": "assets/Navbar-DLe269F_-DLe269F_.css",
-    "src": "dist/assets/Navbar-DLe269F_.css"
+  "dist/assets/DetailJs-CYrpu2RQ.js": {
+    "file": "assets/DetailJs-CYrpu2RQ-agxul6C5.js",
+    "name": "DetailJs-CYrpu2RQ",
+    "src": "dist/assets/DetailJs-CYrpu2RQ.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "dist/assets/ShoppingCart-B9K3qvnT.js"
+    ]
   },
-  "dist/assets/Recommend--vUfM5vD.css": {
-    "file": "assets/Recommend--vUfM5vD--vUfM5vD.css",
-    "src": "dist/assets/Recommend--vUfM5vD.css"
+  "dist/assets/Footer-9QWrvDZy-9QWrvDZy-9QWrvDZy.css": {
+    "file": "assets/Footer-9QWrvDZy-9QWrvDZy-9QWrvDZy-9QWrvDZy.css",
+    "src": "dist/assets/Footer-9QWrvDZy-9QWrvDZy-9QWrvDZy.css"
+  },
+  "dist/assets/Navbar-DLe269F_-DLe269F_-DLe269F_.css": {
+    "file": "assets/Navbar-DLe269F_-DLe269F_-DLe269F_-DLe269F_.css",
+    "src": "dist/assets/Navbar-DLe269F_-DLe269F_-DLe269F_.css"
+  },
+  "dist/assets/Recommend--vUfM5vD--vUfM5vD--vUfM5vD.css": {
+    "file": "assets/Recommend--vUfM5vD--vUfM5vD--vUfM5vD--vUfM5vD.css",
+    "src": "dist/assets/Recommend--vUfM5vD--vUfM5vD--vUfM5vD.css"
+  },
+  "dist/assets/ShoppingCart-B9K3qvnT-DRFsorl3.js": {
+    "file": "assets/ShoppingCart-B9K3qvnT-DRFsorl3-DRFsorl3.js",
+    "name": "ShoppingCart-B9K3qvnT-DRFsorl3",
+    "src": "dist/assets/ShoppingCart-B9K3qvnT-DRFsorl3.js",
+    "isDynamicEntry": true
+  },
+  "dist/assets/ShoppingCart-B9K3qvnT.js": {
+    "file": "assets/ShoppingCart-B9K3qvnT-DRFsorl3.js",
+    "name": "ShoppingCart-B9K3qvnT",
+    "src": "dist/assets/ShoppingCart-B9K3qvnT.js",
+    "isDynamicEntry": true
   },
   "dist/assets/ShoppingCart-Cc9uYjS_.css": {
     "file": "assets/ShoppingCart-Cc9uYjS_.css",
     "src": "dist/assets/ShoppingCart-Cc9uYjS_.css"
   },
-  "dist/assets/ShoppingCart-DE60bMba.js": {
-    "file": "assets/ShoppingCart-DE60bMba-GFLA7zN7.js",
-    "name": "ShoppingCart-DE60bMba",
-    "src": "dist/assets/ShoppingCart-DE60bMba.js",
+  "dist/assets/ShoppingCart-DE60bMba-GFLA7zN7-GFLA7zN7.js": {
+    "file": "assets/ShoppingCart-DE60bMba-GFLA7zN7-GFLA7zN7-GFLA7zN7.js",
+    "name": "ShoppingCart-DE60bMba-GFLA7zN7-GFLA7zN7",
+    "src": "dist/assets/ShoppingCart-DE60bMba-GFLA7zN7-GFLA7zN7.js",
     "isDynamicEntry": true
   },
-  "dist/assets/Wrapper-tDamUW21.css": {
-    "file": "assets/Wrapper-tDamUW21-tDamUW21.css",
-    "src": "dist/assets/Wrapper-tDamUW21.css"
+  "dist/assets/Wrapper-tDamUW21-tDamUW21-tDamUW21.css": {
+    "file": "assets/Wrapper-tDamUW21-tDamUW21-tDamUW21-tDamUW21.css",
+    "src": "dist/assets/Wrapper-tDamUW21-tDamUW21-tDamUW21.css"
   },
-  "dist/assets/index copy-C7pExJAG.js": {
-    "file": "assets/index copy-C7pExJAG-0B3NBnPz.js",
-    "name": "index copy-C7pExJAG",
-    "src": "dist/assets/index copy-C7pExJAG.js",
+  "dist/assets/index copy-C7pExJAG-0B3NBnPz-Cuy6ydJw.js": {
+    "file": "assets/index copy-C7pExJAG-0B3NBnPz-Cuy6ydJw-CYe9zVE3.js",
+    "name": "index copy-C7pExJAG-0B3NBnPz-Cuy6ydJw",
+    "src": "dist/assets/index copy-C7pExJAG-0B3NBnPz-Cuy6ydJw.js",
     "isDynamicEntry": true,
     "imports": [
       "index.html",
-      "dist/assets/main-CYAHpfU9.js",
-      "dist/assets/ShoppingCart-DE60bMba.js",
+      "dist/assets/main-DQwHoL-3.js",
+      "dist/assets/main-BWb0vv2S-CIkd92pj.js",
+      "dist/assets/main-CYAHpfU9-CIBlsPsc-BYG8DAAC.js",
+      "dist/assets/ShoppingCart-DE60bMba-GFLA7zN7-GFLA7zN7.js",
+      "dist/assets/modulepreload-polyfill-B5Qt9EMX-Cb4h8HOd-BxzAKjcf.js",
+      "dist/assets/modulepreload-polyfill-B5Qt9EMX-Cb4h8HOd.js",
+      "dist/assets/ShoppingCart-B9K3qvnT-DRFsorl3.js",
       "dist/assets/modulepreload-polyfill-B5Qt9EMX.js",
+      "dist/assets/ShoppingCart-B9K3qvnT.js",
       "_modulepreload-polyfill-B5Qt9EMX.js",
       "_ShoppingCart-B9K3qvnT.js"
     ],
     "dynamicImports": [
-      "dist/assets/main-CYAHpfU9.js",
-      "dist/assets/main-CYAHpfU9.js",
-      "dist/assets/main-CYAHpfU9.js",
-      "dist/assets/ShoppingCart-DE60bMba.js",
-      "dist/assets/main-CYAHpfU9.js",
-      "dist/assets/DetailJs-C9Ak-9bS.js",
-      "dist/assets/main-CYAHpfU9.js",
-      "dist/assets/main-CYAHpfU9.js",
-      "dist/assets/main-CYAHpfU9.js",
-      "dist/assets/main-CYAHpfU9.js",
-      "dist/assets/main-CYAHpfU9.js",
-      "dist/assets/main-CYAHpfU9.js",
-      "dist/assets/main-CYAHpfU9.js",
-      "dist/assets/main-CYAHpfU9.js",
-      "dist/assets/main-CYAHpfU9.js",
-      "dist/assets/main-CYAHpfU9.js",
-      "dist/assets/main-CYAHpfU9.js",
-      "dist/assets/ShoppingCart-DE60bMba.js",
-      "dist/assets/ShoppingCart-DE60bMba.js",
-      "dist/assets/ShoppingCart-DE60bMba.js",
-      "dist/assets/main-CYAHpfU9.js",
-      "dist/assets/loginJs-BCurpkWY.js",
-      "dist/assets/registeredJs-Dfjk4NfK.js",
-      "dist/assets/ShoppingCart-DE60bMba.js"
+      "dist/assets/main-CYAHpfU9-CIBlsPsc-BYG8DAAC.js",
+      "dist/assets/main-CYAHpfU9-CIBlsPsc-BYG8DAAC.js",
+      "dist/assets/main-CYAHpfU9-CIBlsPsc-BYG8DAAC.js",
+      "dist/assets/ShoppingCart-DE60bMba-GFLA7zN7-GFLA7zN7.js",
+      "dist/assets/main-CYAHpfU9-CIBlsPsc-BYG8DAAC.js",
+      "dist/assets/DetailJs-C9Ak-9bS-DzKgPGuq-DT3unVsL.js",
+      "dist/assets/main-CYAHpfU9-CIBlsPsc-BYG8DAAC.js",
+      "dist/assets/main-CYAHpfU9-CIBlsPsc-BYG8DAAC.js",
+      "dist/assets/main-CYAHpfU9-CIBlsPsc-BYG8DAAC.js",
+      "dist/assets/main-CYAHpfU9-CIBlsPsc-BYG8DAAC.js",
+      "dist/assets/main-CYAHpfU9-CIBlsPsc-BYG8DAAC.js",
+      "dist/assets/main-CYAHpfU9-CIBlsPsc-BYG8DAAC.js",
+      "dist/assets/main-CYAHpfU9-CIBlsPsc-BYG8DAAC.js",
+      "dist/assets/main-CYAHpfU9-CIBlsPsc-BYG8DAAC.js",
+      "dist/assets/main-CYAHpfU9-CIBlsPsc-BYG8DAAC.js",
+      "dist/assets/main-CYAHpfU9-CIBlsPsc-BYG8DAAC.js",
+      "dist/assets/main-CYAHpfU9-CIBlsPsc-BYG8DAAC.js",
+      "dist/assets/ShoppingCart-DE60bMba-GFLA7zN7-GFLA7zN7.js",
+      "dist/assets/ShoppingCart-DE60bMba-GFLA7zN7-GFLA7zN7.js",
+      "dist/assets/ShoppingCart-DE60bMba-GFLA7zN7-GFLA7zN7.js",
+      "dist/assets/main-CYAHpfU9-CIBlsPsc-BYG8DAAC.js",
+      "dist/assets/loginJs-BCurpkWY-BP0dcAWF-BLffJ1Y5.js",
+      "dist/assets/registeredJs-Dfjk4NfK-BEiK6Pvo-WuO39-et.js",
+      "dist/assets/ShoppingCart-DE60bMba-GFLA7zN7-GFLA7zN7.js"
     ]
   },
-  "dist/assets/login-Cgg7JfCP.css": {
+  "dist/assets/loginJs-B66JNrjQ-BP0dcAWF.js": {
+    "file": "assets/loginJs-B66JNrjQ-BP0dcAWF-BLffJ1Y5.js",
+    "name": "loginJs-B66JNrjQ-BP0dcAWF",
+    "src": "dist/assets/loginJs-B66JNrjQ-BP0dcAWF.js",
+    "isDynamicEntry": true
+  },
+  "dist/assets/loginJs-B66JNrjQ.js": {
+    "file": "assets/loginJs-B66JNrjQ-BP0dcAWF.js",
+    "name": "loginJs-B66JNrjQ",
+    "src": "dist/assets/loginJs-B66JNrjQ.js",
+    "isDynamicEntry": true
+  },
+  "dist/assets/loginJs-BCurpkWY-BP0dcAWF-BLffJ1Y5.js": {
+    "file": "assets/loginJs-BCurpkWY-BP0dcAWF-BLffJ1Y5-BP0dcAWF.js",
+    "name": "loginJs-BCurpkWY-BP0dcAWF-BLffJ1Y5",
+    "src": "dist/assets/loginJs-BCurpkWY-BP0dcAWF-BLffJ1Y5.js",
+    "isDynamicEntry": true
+  },
+  "dist/assets/loginJs-Cgg7JfCP.css": {
     "file": "assets/loginJs-Cgg7JfCP.css",
     "src": "src/components/login.js"
   },
-  "dist/assets/loginJs-BCurpkWY.js": {
-    "file": "assets/loginJs-BCurpkWY-BP0dcAWF.js",
-    "name": "loginJs-BCurpkWY",
-    "src": "dist/assets/loginJs-BCurpkWY.js",
-    "isDynamicEntry": true
-  },
-  "dist/assets/main-CYAHpfU9.js": {
-    "file": "assets/main-CYAHpfU9-CIBlsPsc.js",
-    "name": "main-CYAHpfU9",
-    "src": "dist/assets/main-CYAHpfU9.js",
+  "dist/assets/main-BWb0vv2S-CIkd92pj.js": {
+    "file": "assets/main-BWb0vv2S-CIkd92pj-CyQPtzPt.js",
+    "name": "main-BWb0vv2S-CIkd92pj",
+    "src": "dist/assets/main-BWb0vv2S-CIkd92pj.js",
     "isDynamicEntry": true,
     "imports": [
       "index.html",
+      "dist/assets/main-DQwHoL-3.js",
+      "dist/assets/modulepreload-polyfill-B5Qt9EMX-Cb4h8HOd.js",
+      "dist/assets/ShoppingCart-B9K3qvnT-DRFsorl3.js",
       "dist/assets/modulepreload-polyfill-B5Qt9EMX.js",
-      "dist/assets/ShoppingCart-DE60bMba.js",
+      "dist/assets/ShoppingCart-B9K3qvnT.js",
       "_modulepreload-polyfill-B5Qt9EMX.js",
       "_ShoppingCart-B9K3qvnT.js"
     ],
     "dynamicImports": [
-      "dist/assets/ShoppingCart-DE60bMba.js",
-      "dist/assets/DetailJs-C9Ak-9bS.js",
-      "dist/assets/ShoppingCart-DE60bMba.js",
-      "dist/assets/ShoppingCart-DE60bMba.js",
-      "dist/assets/ShoppingCart-DE60bMba.js",
-      "dist/assets/index copy-C7pExJAG.js",
-      "dist/assets/loginJs-BCurpkWY.js",
-      "dist/assets/registeredJs-Dfjk4NfK.js",
-      "dist/assets/ShoppingCart-DE60bMba.js"
+      "dist/assets/DetailJs-C9Ak-9bS-DzKgPGuq-DT3unVsL.js",
+      "dist/assets/ShoppingCart-DE60bMba-GFLA7zN7-GFLA7zN7.js",
+      "dist/assets/index copy-C7pExJAG-0B3NBnPz-Cuy6ydJw.js",
+      "dist/assets/loginJs-BCurpkWY-BP0dcAWF-BLffJ1Y5.js",
+      "dist/assets/main-CYAHpfU9-CIBlsPsc-BYG8DAAC.js",
+      "dist/assets/modulepreload-polyfill-B5Qt9EMX-Cb4h8HOd-BxzAKjcf.js",
+      "dist/assets/registeredJs-Dfjk4NfK-BEiK6Pvo-WuO39-et.js"
+    ]
+  },
+  "dist/assets/main-CYAHpfU9-CIBlsPsc-BYG8DAAC.js": {
+    "file": "assets/main-CYAHpfU9-CIBlsPsc-BYG8DAAC-Dv8DyAzI.js",
+    "name": "main-CYAHpfU9-CIBlsPsc-BYG8DAAC",
+    "src": "dist/assets/main-CYAHpfU9-CIBlsPsc-BYG8DAAC.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "dist/assets/main-DQwHoL-3.js",
+      "dist/assets/main-BWb0vv2S-CIkd92pj.js",
+      "dist/assets/modulepreload-polyfill-B5Qt9EMX-Cb4h8HOd-BxzAKjcf.js",
+      "dist/assets/ShoppingCart-DE60bMba-GFLA7zN7-GFLA7zN7.js",
+      "dist/assets/modulepreload-polyfill-B5Qt9EMX-Cb4h8HOd.js",
+      "dist/assets/ShoppingCart-B9K3qvnT-DRFsorl3.js",
+      "dist/assets/modulepreload-polyfill-B5Qt9EMX.js",
+      "dist/assets/ShoppingCart-B9K3qvnT.js",
+      "_modulepreload-polyfill-B5Qt9EMX.js",
+      "_ShoppingCart-B9K3qvnT.js"
+    ],
+    "dynamicImports": [
+      "dist/assets/ShoppingCart-DE60bMba-GFLA7zN7-GFLA7zN7.js",
+      "dist/assets/DetailJs-C9Ak-9bS-DzKgPGuq-DT3unVsL.js",
+      "dist/assets/ShoppingCart-DE60bMba-GFLA7zN7-GFLA7zN7.js",
+      "dist/assets/ShoppingCart-DE60bMba-GFLA7zN7-GFLA7zN7.js",
+      "dist/assets/ShoppingCart-DE60bMba-GFLA7zN7-GFLA7zN7.js",
+      "dist/assets/index copy-C7pExJAG-0B3NBnPz-Cuy6ydJw.js",
+      "dist/assets/loginJs-BCurpkWY-BP0dcAWF-BLffJ1Y5.js",
+      "dist/assets/registeredJs-Dfjk4NfK-BEiK6Pvo-WuO39-et.js",
+      "dist/assets/ShoppingCart-DE60bMba-GFLA7zN7-GFLA7zN7.js"
+    ]
+  },
+  "dist/assets/main-DQwHoL-3.js": {
+    "file": "assets/main-DQwHoL-3-BxEWo7V8.js",
+    "name": "main-DQwHoL-3",
+    "src": "dist/assets/main-DQwHoL-3.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "dist/assets/modulepreload-polyfill-B5Qt9EMX.js",
+      "dist/assets/ShoppingCart-B9K3qvnT.js",
+      "_modulepreload-polyfill-B5Qt9EMX.js",
+      "_ShoppingCart-B9K3qvnT.js"
+    ],
+    "dynamicImports": [
+      "dist/assets/DetailJs-C9Ak-9bS-DzKgPGuq-DT3unVsL.js",
+      "dist/assets/DetailJs-CYrpu2RQ-agxul6C5.js",
+      "dist/assets/ShoppingCart-B9K3qvnT-DRFsorl3.js",
+      "dist/assets/ShoppingCart-DE60bMba-GFLA7zN7-GFLA7zN7.js",
+      "dist/assets/index copy-C7pExJAG-0B3NBnPz-Cuy6ydJw.js",
+      "dist/assets/loginJs-B66JNrjQ-BP0dcAWF.js",
+      "dist/assets/loginJs-BCurpkWY-BP0dcAWF-BLffJ1Y5.js",
+      "dist/assets/main-BWb0vv2S-CIkd92pj.js",
+      "dist/assets/main-CYAHpfU9-CIBlsPsc-BYG8DAAC.js",
+      "dist/assets/modulepreload-polyfill-B5Qt9EMX-Cb4h8HOd-BxzAKjcf.js",
+      "dist/assets/modulepreload-polyfill-B5Qt9EMX-Cb4h8HOd.js",
+      "dist/assets/registeredJs-Dfjk4NfK-BEiK6Pvo-WuO39-et.js",
+      "dist/assets/registeredJs-DtVsAgll-6o_nMwnx.js"
     ]
   },
   "dist/assets/main-tE0qSFoS.css": {
     "file": "assets/main-tE0qSFoS.css",
     "src": "index.html"
   },
-  "dist/assets/main_top-BVQQgywN.css": {
-    "file": "assets/main_top-BVQQgywN-BVQQgywN.css",
-    "src": "dist/assets/main_top-BVQQgywN.css"
+  "dist/assets/main_top-BVQQgywN-BVQQgywN-BVQQgywN.css": {
+    "file": "assets/main_top-BVQQgywN-BVQQgywN-BVQQgywN-BVQQgywN.css",
+    "src": "dist/assets/main_top-BVQQgywN-BVQQgywN-BVQQgywN.css"
   },
-  "dist/assets/master-BWduv2s_.css": {
-    "file": "assets/master-BWduv2s_-BWduv2s_.css",
-    "src": "dist/assets/master-BWduv2s_.css"
+  "dist/assets/master-BWduv2s_-BWduv2s_-BWduv2s_.css": {
+    "file": "assets/master-BWduv2s_-BWduv2s_-BWduv2s_-BWduv2s_.css",
+    "src": "dist/assets/master-BWduv2s_-BWduv2s_-BWduv2s_.css"
   },
-  "dist/assets/master-DzxI0Bib.css": {
-    "file": "assets/master-DzxI0Bib-DzxI0Bib.css",
-    "src": "dist/assets/master-DzxI0Bib.css"
+  "dist/assets/master-DzxI0Bib-DzxI0Bib-DzxI0Bib.css": {
+    "file": "assets/master-DzxI0Bib-DzxI0Bib-DzxI0Bib-DzxI0Bib.css",
+    "src": "dist/assets/master-DzxI0Bib-DzxI0Bib-DzxI0Bib.css"
+  },
+  "dist/assets/modulepreload-polyfill-B5Qt9EMX-Cb4h8HOd-BxzAKjcf.js": {
+    "file": "assets/modulepreload-polyfill-B5Qt9EMX-Cb4h8HOd-BxzAKjcf-BxzAKjcf.js",
+    "name": "modulepreload-polyfill-B5Qt9EMX-Cb4h8HOd-BxzAKjcf",
+    "src": "dist/assets/modulepreload-polyfill-B5Qt9EMX-Cb4h8HOd-BxzAKjcf.js",
+    "isDynamicEntry": true
+  },
+  "dist/assets/modulepreload-polyfill-B5Qt9EMX-Cb4h8HOd.js": {
+    "file": "assets/modulepreload-polyfill-B5Qt9EMX-Cb4h8HOd-BxzAKjcf.js",
+    "name": "modulepreload-polyfill-B5Qt9EMX-Cb4h8HOd",
+    "src": "dist/assets/modulepreload-polyfill-B5Qt9EMX-Cb4h8HOd.js",
+    "isDynamicEntry": true
   },
   "dist/assets/modulepreload-polyfill-B5Qt9EMX.js": {
     "file": "assets/modulepreload-polyfill-B5Qt9EMX-Cb4h8HOd.js",
@@ -165,18 +284,30 @@
     "src": "dist/assets/modulepreload-polyfill-B5Qt9EMX.js",
     "isDynamicEntry": true
   },
-  "dist/assets/registered-CxQoDQTy.css": {
+  "dist/assets/registeredJs-CxQoDQTy.css": {
     "file": "assets/registeredJs-CxQoDQTy.css",
     "src": "src/components/registered.js"
   },
-  "dist/assets/registeredJs-Dfjk4NfK.js": {
-    "file": "assets/registeredJs-Dfjk4NfK-BEiK6Pvo.js",
-    "name": "registeredJs-Dfjk4NfK",
-    "src": "dist/assets/registeredJs-Dfjk4NfK.js",
+  "dist/assets/registeredJs-Dfjk4NfK-BEiK6Pvo-WuO39-et.js": {
+    "file": "assets/registeredJs-Dfjk4NfK-BEiK6Pvo-WuO39-et-BznUmZ2i.js",
+    "name": "registeredJs-Dfjk4NfK-BEiK6Pvo-WuO39-et",
+    "src": "dist/assets/registeredJs-Dfjk4NfK-BEiK6Pvo-WuO39-et.js",
+    "isDynamicEntry": true
+  },
+  "dist/assets/registeredJs-DtVsAgll-6o_nMwnx.js": {
+    "file": "assets/registeredJs-DtVsAgll-6o_nMwnx-BBmI1r1k.js",
+    "name": "registeredJs-DtVsAgll-6o_nMwnx",
+    "src": "dist/assets/registeredJs-DtVsAgll-6o_nMwnx.js",
+    "isDynamicEntry": true
+  },
+  "dist/assets/registeredJs-DtVsAgll.js": {
+    "file": "assets/registeredJs-DtVsAgll-6o_nMwnx.js",
+    "name": "registeredJs-DtVsAgll",
+    "src": "dist/assets/registeredJs-DtVsAgll.js",
     "isDynamicEntry": true
   },
   "index.html": {
-    "file": "assets/main-BWb0vv2S.js",
+    "file": "assets/main-DB_BMtPD.js",
     "name": "main",
     "src": "index.html",
     "isEntry": true,
@@ -185,13 +316,25 @@
       "_ShoppingCart-B9K3qvnT.js"
     ],
     "dynamicImports": [
-      "dist/assets/DetailJs-C9Ak-9bS.js",
-      "dist/assets/ShoppingCart-DE60bMba.js",
-      "dist/assets/index copy-C7pExJAG.js",
-      "dist/assets/loginJs-BCurpkWY.js",
-      "dist/assets/main-CYAHpfU9.js",
+      "dist/assets/DetailJs-C9Ak-9bS-DzKgPGuq-DT3unVsL.js",
+      "dist/assets/DetailJs-CYrpu2RQ-agxul6C5.js",
+      "dist/assets/DetailJs-CYrpu2RQ.js",
+      "dist/assets/ShoppingCart-B9K3qvnT-DRFsorl3.js",
+      "dist/assets/ShoppingCart-B9K3qvnT.js",
+      "dist/assets/ShoppingCart-DE60bMba-GFLA7zN7-GFLA7zN7.js",
+      "dist/assets/index copy-C7pExJAG-0B3NBnPz-Cuy6ydJw.js",
+      "dist/assets/loginJs-B66JNrjQ-BP0dcAWF.js",
+      "dist/assets/loginJs-B66JNrjQ.js",
+      "dist/assets/loginJs-BCurpkWY-BP0dcAWF-BLffJ1Y5.js",
+      "dist/assets/main-BWb0vv2S-CIkd92pj.js",
+      "dist/assets/main-CYAHpfU9-CIBlsPsc-BYG8DAAC.js",
+      "dist/assets/main-DQwHoL-3.js",
+      "dist/assets/modulepreload-polyfill-B5Qt9EMX-Cb4h8HOd-BxzAKjcf.js",
+      "dist/assets/modulepreload-polyfill-B5Qt9EMX-Cb4h8HOd.js",
       "dist/assets/modulepreload-polyfill-B5Qt9EMX.js",
-      "dist/assets/registeredJs-Dfjk4NfK.js"
+      "dist/assets/registeredJs-Dfjk4NfK-BEiK6Pvo-WuO39-et.js",
+      "dist/assets/registeredJs-DtVsAgll-6o_nMwnx.js",
+      "dist/assets/registeredJs-DtVsAgll.js"
     ],
     "css": [
       "assets/main-tE0qSFoS.css"
