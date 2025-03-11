@@ -267,7 +267,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // 创建 return_top 图像元素
   const returnTopImg = document.createElement("img");
-  returnTopImg.src = "/assets/return-top.png";
+  returnTopImg.src = "./assets/return_top.png";
   returnTopImg.className = "return_top";
 
   // 创建水平线元素
@@ -275,7 +275,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // 创建 return_bottom 图像元素
   const returnBottomImg = document.createElement("img");
-  returnBottomImg.src = "/assets/return-bottom.png";
+  returnBottomImg.src = "./assets/return_bottom.png";
   returnBottomImg.className = "return_bottom";
 
   // 将创建的元素添加到按钮中
