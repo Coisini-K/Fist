@@ -28,24 +28,24 @@ export default defineConfig({
       },
     },
     {
-      name: 'copy-manifest',
-      apply: 'build',
+      name: "copy-manifest",
+      apply: "build",
       closeBundle() {
-        const manifestPath = path.resolve(__dirname, 'dist/manifest.json');
+        const manifestPath = path.resolve(__dirname, "dist/manifest.json");
         if (fs.existsSync(manifestPath)) {
-          const manifestContent = fs.readFileSync(manifestPath, 'utf-8');
-          const outputPath = path.resolve(__dirname, 'dist', 'manifest.json');
+          const manifestContent = fs.readFileSync(manifestPath, "utf-8");
+          const outputPath = path.resolve(__dirname, "dist", "manifest.json");
           fs.writeFileSync(outputPath, manifestContent);
-          console.log('Manifest.json copied to output directory.');
+          console.log("Manifest.json copied to output directory.");
         } else {
-          console.error('Manifest.json not found in dist directory.');
+          console.error("Manifest.json not found in dist directory.");
         }
       },
     },
   ],
   server: {
     force: true, // 强制刷新所有模块
-     // port: 3000, // 可以指定端口，默认是3000
+    // port: 3000, // 可以指定端口，默认是3000
     open: true, // 自动打开浏览器
   },
   resolve: {
@@ -58,7 +58,8 @@ export default defineConfig({
     outDir: "dist", // 输出目录
     assetsDir: "assets", // 确保静态资源放在 assets 目录中
     manifest: true,
-    sourcemap: true,
+    emptyOutDir: true,
+    // sourcemap: true,
     rollupOptions: {
       input: {
         main: path.resolve(__dirname, "index.html"),
@@ -70,7 +71,7 @@ export default defineConfig({
         DetailJs: path.resolve(__dirname, "src/components/Detail.js"),
       },
       output: {
-        chunkFileNames: "assets/[name]-[hash].js",
+        chunkFileNames: "assets/[name]-[hash].js", // 确保使用 [hash] 来保证唯一性
         assetFileNames: ({ name }) => {
           if (name.endsWith(".css")) return `assets/[name]-[hash].css`;
           return `assets/[name]-[hash].[ext]`;

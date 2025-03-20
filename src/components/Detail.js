@@ -1,6 +1,7 @@
 /* 商品详情页js Detail.html */
 import Reception from '../stores/reception.js';
-import  '@/components/ShoppingCart/ShoppingCart.js';
+import  '@/components/ShoppingCart/Addition.js';
+import  '@/components/ShoppingCart/Cart.js';
 import  '@/style/Detail.css';
 // import '@/components/index.js';
 // import '@/router/router.js';
